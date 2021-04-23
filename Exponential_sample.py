@@ -11,7 +11,7 @@ def main(lamb: float, Nsample: int, Nexperiment:int ):
     count, bins, ignored = plt.hist(Mean, 50, density=True)
     plt.title(str(Nexperiment)+' experiments of '+str(Nsample)+' samples')
     plt.show()
-    plt.savefig('Poisson_mean.png')
+    plt.savefig('Exponential_mean.png')
     
     
 
