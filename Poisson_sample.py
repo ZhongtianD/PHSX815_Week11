@@ -8,7 +8,7 @@ def main(lamb: float, Nsample: int, Nexperiment:int ):
     Samples = np.random.poisson(lam=lamb, size=(Nexperiment,Nsample) )
     Mean = np.mean(Samples,axis=1)
     
-    count, bins, ignored = plt.hist(Mean, 30, density=True)
+    count, bins, ignored = plt.hist(Mean, 50, density=True)
     plt.title(str(Nexperiment)+' experiments of '+str(Nsample)+' samples')
     plt.show()
     plt.savefig('Poisson_mean.png')
